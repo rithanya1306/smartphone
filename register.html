@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Register - SMART PHONE</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+
+<body>
+
+<div class="header">
+  <h1>REGISTER</h1>
+</div>
+
+<div class="menu">
+  <a href="index.html">Home</a>
+  <a href="products.php">Mobiles</a>
+  <a href="about.html">About Us</a>
+  <a href="register.html">Register</a>
+  <a href="login.html">Login</a>
+</div>
+
+<div class="formbox">
+  <h2>Create New Account</h2>
+
+  <form action="register.php" method="post" onsubmit="return validateRegister()">
+    Name:
+    <input type="text" id="name" name="name">
+
+    Email:
+    <input type="email" id="email" name="email">
+
+    Phone Number:
+    <input type="text" id="phone" name="phone" maxlength="10">
+
+    Password:
+    <input type="password" id="password" name="password">
+
+    Confirm Password:
+    <input type="password" id="confirm" name="confirm">
+
+    <input type="checkbox" onclick="showPassword()"> Show Password
+    <br><br>
+
+    <button type="submit">Register</button>
+    <button type="reset">Clear</button>
+  </form>
+
+  <p>Already have an account? <a href="login.html">Login here</a></p>
+</div>
+
+</body>
+  </html>
